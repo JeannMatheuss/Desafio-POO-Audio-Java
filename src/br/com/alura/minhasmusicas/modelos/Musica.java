@@ -5,7 +5,7 @@ public class Musica extends Audio{
     private String cantor;
     private String genero;
 
-    
+
     public String getAlbum() {
         return album;
     }
@@ -25,5 +25,12 @@ public class Musica extends Audio{
         this.genero = genero;
     }
 
-    
+    @Override
+    public int getClassificacao() {
+        if (this.getTotalDeRepoducoes() > 2000) {
+            return 10;
+        } else {
+            return 5;
+        }
+    }
 }
