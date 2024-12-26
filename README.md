@@ -1,18 +1,20 @@
-## Getting Started
+# Minhas Músicas
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é uma aplicação Java que simula uma coleção de músicas e podcasts, permitindo reproduções, curtidas e uma análise de preferências com base na popularidade. Ele organiza a lógica utilizando conceitos de Orientação a Objetos, como herança e encapsulamento.
 
-## Folder Structure
+## Funcionalidades
 
-The workspace contains two folders by default, where:
+- **Adicionar Músicas e Podcasts**: Gerencie uma coleção de músicas e podcasts com informações detalhadas.
+- **Reproduções e Curtidas**: Simule reproduções e curtidas para cada item.
+- **Classificação Automática**:
+  - Músicas recebem classificação máxima (10) se tiverem mais de 2000 reproduções.
+  - Podcasts recebem classificação máxima (10) se tiverem mais de 500 curtidas.
+- **Gerenciador de Favoritos**: Avalia automaticamente os itens e indica quais são sucessos absolutos ou boas opções.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Estrutura do Projeto
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. **Audio**: Classe base com propriedades comuns para músicas e podcasts, como título, número de reproduções e curtidas.
+2. **Musica**: Especialização de `Audio`, com informações como álbum, cantor e gênero.
+3. **Podcast**: Especialização de `Audio`, com informações como apresentador e descrição.
+4. **MinhasPreferidas**: Gerenciador que avalia os itens com base na classificação.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
