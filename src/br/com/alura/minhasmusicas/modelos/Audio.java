@@ -23,5 +23,11 @@ public class Audio {
         return classificacao;
     }
 
-    
+    public void curte() {
+        this.totalDeCurtidas++;
+    }
+
+    public void reproduz() {
+        this.totalDeRepoducoes++;
+    }
 }
